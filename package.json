@@ -13,10 +13,10 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-prettier": "^3.4.1",
-    "nodemon": "^2.0.12",
-    "prettier": "^2.3.2"
+    "nodemon": "^2.0.21",
+    "prettier": "^2.8.4"
   },
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
@@ -26,6 +26,6 @@
     "joi": "^17.4.2"
   },
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   }
 }
