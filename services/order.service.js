@@ -1,15 +1,20 @@
 const boom = require('@hapi/boom');
+const pool = require('../libs/postgres.pool')
 
 class OrderService {
 
   constructor(){
+    this.pool = pool;
+    this.pool.on('error', (error) => console.log(error))
   }
   async create(data) {
     return data;
   }
 
   async find() {
-    return [];
+    const sqlSentence = "SELECT * FROM public.tasks"
+    const resp = await this.pool.query(sqlSentence)
+    return resp.rows;
   }
 
   async findOne(id) {
